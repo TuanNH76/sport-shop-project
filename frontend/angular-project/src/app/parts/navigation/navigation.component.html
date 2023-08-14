@@ -1,0 +1,110 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top sport-navbar">
+  <a class="navbar-brand" [routerLink]="root">
+    <img src="/assets/logo.png" width="48" height="48" class="d-inline-block align-top" alt="">
+    Sport Shop
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <div class="navbar-nav mr-auto" *ngIf="!currentUser || currentUser.role == Role.Customer">
+      <!-- Thêm lớp "mr-auto" để tạo khoảng cách bên phải -->
+      <a class="nav-item nav-link" routerLink="/category/0">
+        Badminton 
+      </a>
+      <a class="nav-item nav-link" routerLink="/category/1">
+        Table Tennis
+      </a>
+      <a class="nav-item nav-link" routerLink="/category/2">
+        Football
+      </a>
+      <a class="nav-item nav-link" routerLink="/category/3">
+        Special
+      </a>
+
+    </div>
+
+    <div class="navbar-nav ml-auto ">
+      <a *ngIf="!currentUser || currentUser.role == Role.Customer" class="nav-item nav-link" routerLink="/cart">
+        <i class="fas fa-shopping-cart"></i>
+        Cart
+      </a>
+
+      <ng-container *ngIf="currentUser; else noUser">
+        <a *ngIf="currentUser.role == Role.Manager" class="nav-item nav-link" routerLink='/seller/revenue'>
+          Show Revenue
+        </a>
+        <div class="subnav  mr-auto" *ngIf="currentUser.role == Role.Manager">
+          <button class="subnavbtn">Manage User <i class="fa fa-caret-down"></i></button>
+          <div *ngIf="currentUser.role == Role.Manager" class="subnav-content">
+            <a class="nav-item nav-link" routerLink='/seller/management/manager'>Manager</a>
+            <a class="nav-item nav-link" routerLink='/seller/management/employee'>Employee</a>
+            <a class="nav-item nav-link" routerLink='/seller/management/customer'>Customer</a>
+          </div>
+        </div>
+        <a *ngIf="currentUser.role == Role.Manager" class="nav-item nav-link" routerLink="/seller/product/new">
+          Add Product
+        </a>
+        <a class="nav-item nav-link" routerLink="/order">
+          <i class="fas fa-list-ul"></i>
+          Orders
+        </a>
+        <a class="nav-item nav-link" routerLink="/profile">
+          {{name}}
+        </a>
+        <a class="nav-item nav-link" (click)="logout()" routerLink="/login" [queryParams]="{logout: true}">
+          Sign Out
+        </a>
+      </ng-container>
+      <ng-template #noUser>
+        <a class="nav-item nav-link login" routerLink="/login">
+          Sign In
+        </a>
+        <a class="nav-item nav-link" routerLink="/register">
+          Sign Up
+        </a>
+      </ng-template>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<section *ngIf="banner">
+<section   class="hero-section mt-5">
+  <div class="card-grid">
+    <a class="card" href="http://localhost:4200/category/0">
+      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dlgyapagf/image/upload/v1689505776/Sport-Shop/cute-boy-playing-badminton-cartoon-vector-icon-illustration-people-sport-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4044_tf55et.avif)"></div>
+      <div class="card__content">
+        <!-- <p class="card__category">Category</p>
+        <h3 class="card__heading">Badminton</h3> -->
+      </div>
+    </a>
+    <a class="card" href="http://localhost:4200/category/1">
+      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dlgyapagf/image/upload/v1689506981/Sport-Shop/Table_Tennis_Match_kkc8lv.gif)"></div>
+      <div class="card__content">
+        <!-- <p class="card__category">Category</p>
+        <h3 class="card__heading">TableTennis</h3> -->
+      </div>
+    </a>
+    <a class="card" href="http://localhost:4200/category/2">
+      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dlgyapagf/image/upload/v1689504962/Sport-Shop/033_i8kxpu.jpg)"></div>
+      <div class="card__content">
+        <!-- <p class="card__category">Category</p>
+        <h3 class="card__heading">Football</h3> -->
+      </div>
+    </a>
+    <a class="card" href="http://localhost:4200/category/3">
+      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dlgyapagf/image/upload/v1689506078/Sport-Shop/Sports_illustration_lvypju.jpg)"></div>
+      <div class="card__content">
+        <!-- <p class="card__category">Category</p>
+        <h3 class="card__heading">Special</h3> -->
+      </div>
+    </a>
+  </div>
+</section>
+</section>

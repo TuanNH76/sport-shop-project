@@ -1,0 +1,23 @@
+footer {
+    background-color: rgb(36, 36, 36);
+}
+
+ /* .main-content {
+    margin-bottom: 80px; 
+  } 
+*/
+
+/* .footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+  } */ 
+
+  .main-content {
+    flex: 1; /* Chia tỷ lệ flex để nội dung chủ yếu chiếm phần còn lại */
+    min-height: calc(100vh - 150px); /* Đặt chiều cao tối thiểu cho nội dung, bằng chiều cao cửa sổ trình duyệt trừ đi chiều cao của navbar và footer */
+  }
+  
+  footer {
+    flex-shrink: 0; /* Không co lại để footer có thể kéo dài */
+  }

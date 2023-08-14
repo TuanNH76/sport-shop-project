@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #00ff0d;
+}
+
+.ng-touched.ng-invalid:not(form)  {
+    border-left: 5px solid #ff0400;
+}
+body {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+/* card */
+.product-container{
+  position: relative;
+}
+.product-card {
+  max-width: 12em;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 5px 5px #e1e1e1;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3em;
+  }
+.product-card img {
+  max-width: 100%;
+}
+.product-card h4 {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+.product-card div {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
+}
+.product-card:hover {
+  background-color: lightslategray;
+  color: #fff;
+}
+.product-card:hover button {
+  color: #000;
+  background-color: #fff;
+}
+@media screen and (max-width: 576px) {
+  .product-card {
+    font-size: 0.9em;
+  }
+}
+
+
+/* Subnav button */
+.subnav {
+  position: relative;
+  display: inline-block;
+}
+  
+  .subnav .subnavbtn {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  }
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    color: #fff;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }

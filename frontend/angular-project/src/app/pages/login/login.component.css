@@ -1,0 +1,47 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    z-index: 2;
+    
+}
+.register  {
+     width: 600px;
+    max-width: 600px;
+
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+    justify-content: center;
+  align-items: center;
+  margin:150px auto;
+  border-radius: 30px;
+} 
+h1{
+    display: flex;
+    text-emphasis-color: #0000ff;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.btn-exit{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+    border-radius: 50%;
+}
+.bxs-x-circle{
+    position:absolute;
+    background:red ;
+    top:-32px;
+    right: -32px;
+    font-size:2rem;
+    border-radius: 50%;
+}

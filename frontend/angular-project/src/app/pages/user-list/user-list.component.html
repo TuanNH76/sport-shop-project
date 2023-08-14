@@ -1,0 +1,36 @@
+<h1 align="center" class="display-4 ">User Manager</h1>
+<table id="table" class="table table-striped text-center" style="width:100%;">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Email</th>
+        <th scope="col">Name</th>
+        <!-- <th scope="col">Type</th> -->
+        <th scope="col">Phone</th>
+        <th scope="col">Address</th>
+        <th scope="col">Active</th>
+        <th scope="col">Role</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of page?.content">
+    
+        <td class="align-middle">{{user.userId}}</td>
+        <td class="align-middle">{{user.email}}</td>
+        <!-- <td class="align-middle">{{CategoryType[productInfo.categoryType]}}</td> -->
+        <td class="align-middle">{{user.name}}</td>
+        <td class="align-middle">{{user.phone}}</td>
+        <td class="align-middle">{{user.address}}</td>
+        <td class="align-middle">{{user.active}}</td>
+        <td class="align-middle">{{user.role}}</td>
+        <td class="align-middle">
+            <a style="display: block" class="btn btn-outline-primary" role="button"
+            routerLink="/seller/management/delete/{{user.email}}">
+                Delete
+            </a>
+        </td>
+
+    </tbody>
+</table>
+<app-pagination [currentPage]="page"></app-pagination>

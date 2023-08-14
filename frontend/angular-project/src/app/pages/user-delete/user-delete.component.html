@@ -1,0 +1,14 @@
+<div class="form-delete">
+<form #form="ngForm" (ngSubmit)="onSubmit()">   
+<div class="alert alert-danger" role="alert" >
+    Are you sure you want to delete the user with email: {{ email }}?
+    <button *ngIf="!deleted" class="btn btn-danger" type="submit">Confirm Delete</button>
+    <button *ngIf="!deleted" class="btn btn-secondary">Cancel</button>
+  </div>
+  <div>
+  <div *ngIf="deleted" class="alert alert-success" role="alert">
+    User with email {{ email }} has been successfully deleted.
+  </div>
+  </div>
+</form>
+</div>
