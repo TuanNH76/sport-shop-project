@@ -18,6 +18,9 @@ public interface ProductService {
     //Find by name
     Page<Product> findAllByName(String name,Pageable pageable);
 
+    //Find by top selling
+    Page<Product> findByTopSale(Pageable pageable);
+
     // increase stock
     void increaseStock(Integer productId, int amount);
 

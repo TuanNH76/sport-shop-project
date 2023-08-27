@@ -36,4 +36,8 @@ export class OrderService {
             catchError(_ => of(null))
         );
     }
+
+    downloadExcelFile(): Observable<Blob> {
+        return this.http.get(`${this.orderUrl}/export-to-excel`, { responseType: 'blob' });
+      }
 }

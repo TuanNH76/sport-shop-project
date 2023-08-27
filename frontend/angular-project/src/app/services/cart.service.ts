@@ -98,8 +98,9 @@ export class CartService {
     update(productInOrder): Observable<ProductInOrder> {
 
         if (this.currentUser) {
-            const url = `${this.cartUrl}/${productInOrder.productId}`;
-            return this.http.put<ProductInOrder>(url, productInOrder.count);
+            const url = `${this.cartUrl}/${productInOrder.productId}?quantity=${productInOrder.count}`;
+            // return this.http.put<ProductInOrder>(url, productInOrder.count);
+            return this.http.put<ProductInOrder>(url,null);
         }
     }
 

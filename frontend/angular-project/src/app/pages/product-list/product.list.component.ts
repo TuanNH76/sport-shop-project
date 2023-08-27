@@ -48,7 +48,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
         }
     }
 
-    getProds(page: number = 3, size: number = 6) {
+    getProds(page: number = 1, size: number = 5) {
         this.productService.getAllInPage(+page, +size)
             .subscribe(page => {
                 this.page = page;
@@ -56,6 +56,14 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
     }
 
+
+    // remove(productInfos: ProductInfo[], productInfo) {
+    //     this.productService.delete(productInfo).subscribe(_ => {
+    //             productInfos = productInfos.filter(e => e.productId != productInfo);
+    //         },
+    //         err => {
+    //         });
+    // }
 
 
 }

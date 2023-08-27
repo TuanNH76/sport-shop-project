@@ -24,10 +24,23 @@ export class ProductService {
             )
     }
 
+    getAllByName(page: number, size: number, name:string): Observable<any>{
+        const url = `${this.productUrl}/search/${name}?page=${page}&size=${size}`;
+        return this.http.get(url).pipe(
+            
+        )
+    }
     getCategoryInPage(categoryType: number, page: number, size: number): Observable<any> {
         const url = `${this.categoryUrl}/${categoryType}?page=${page}&size=${size}`;
         return this.http.get(url).pipe(
             // tap(data => console.log(data))
+        );
+    }
+
+    getByTopSale(): Observable<any>{
+        const url = `${this.productUrl}/best-seller`;
+        return this.http.get(url).pipe(
+
         );
     }
 
@@ -56,7 +69,6 @@ export class ProductService {
         const url = `${apiUrl}/seller/product/${productInfo.productId}/delete`;
         return this.http.delete(url);
     }
-
 
     /**
      * Handle Http operation that failed.

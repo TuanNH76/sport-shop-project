@@ -46,6 +46,12 @@ public class ProductServiceImpl implements ProductService {
     public Page<Product> findAllByName(String name, Pageable pageable){
         return productRepository.findByProductNameContainingIgnoreCase(name,pageable);
     }
+
+    @Override
+    public Page<Product> findByTopSale(Pageable pageable) {
+        return productRepository.findBySales(pageable);
+    }
+
     @Override
     @Transactional
     public void increaseStock(Integer productId, int amount) {
@@ -79,8 +85,6 @@ public class ProductServiceImpl implements ProductService {
         if (Product.getProductStatus() == ProductStatusEnum.DOWN.getCode()) {
             throw new MyException(ResultEnum.PRODUCT_STATUS_ERROR);
         }
-
-        //更新
         Product.setProductStatus(ProductStatusEnum.DOWN.getCode());
         return productRepository.save(Product);
     }
@@ -108,8 +112,6 @@ public class ProductServiceImpl implements ProductService {
         if(Product.getProductStatus() > 1) {
             throw new MyException(ResultEnum.PRODUCT_STATUS_ERROR);
         }
-
-
         return productRepository.save(Product);
     }
 

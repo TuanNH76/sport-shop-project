@@ -17,6 +17,7 @@ import {ProductDeleteComponent} from './pages/product-delete/product-delete.comp
 import {UserListComponent}  from './pages/user-list/user-list.component';
 import { UserDeleteComponent } from './pages/user-delete/user-delete.component';
 import { RevenueListComponent } from './pages/revenue-list/revenue-list.component';
+import { RevenueGetComponent } from './pages/revenue-get/revenue-get.component';
 
 
 const routes: Routes = [
@@ -79,8 +80,14 @@ const routes: Routes = [
         data : {roles : [Role.Manager]}
     },
     {
-        path: 'seller/revenue',
+        path: 'seller/revenue/show',
         component: RevenueListComponent,
+        canActivate : [AuthGuard],
+        data : {roles : [Role.Manager]}
+    },
+    {
+        path: 'seller/revenue/cal',
+        component: RevenueGetComponent,
         canActivate : [AuthGuard],
         data : {roles : [Role.Manager]}
     }

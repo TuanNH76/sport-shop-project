@@ -1,0 +1,22 @@
+
+<h1 class="display-4">Revenue of Year and Month</h1>
+<form #revenueForm="ngForm" (ngSubmit)="calculateRevenue(revenueForm)">
+    <div class="form-group">
+      <label for="year">Year:</label>
+      <input type="number" id="year" class="form-control" name="year" ngModel required>
+    </div>
+  
+    <div class="form-group">
+      <label for="month">Month:</label>
+      <input type="number" id="month" class="form-control" name="month" ngModel required>
+    </div>
+  
+    <button class="btn btn-primary" type="submit">Calculate Revenue</button>
+  </form>
+
+  
+<div *ngIf="show">
+    <h3>Revenue of {{month}}/{{year}}:</h3>
+    <p>Total amount: {{revenue}}</p>
+  </div>
+  

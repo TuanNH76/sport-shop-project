@@ -45,7 +45,7 @@ export class OrderComponent implements OnInit, OnDestroy {
             size = +this.route.snapshot.queryParamMap.get('size');
         }
         this.orderService.getPage(nextPage, size).subscribe(page => this.page = page, _ => {
-            console.log("Get Orde Failed")
+            console.log("Get Order Failed")
         });
     }
 
@@ -65,6 +65,31 @@ export class OrderComponent implements OnInit, OnDestroy {
             }
         })
     }
+    downloadExcel() {
+        this.orderService.downloadExcelFile().subscribe(blob => {
+          const filename = this.getFilenameFromResponseHeaders(blob);
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          a.click();
+          window.URL.revokeObjectURL(url);
+        });
+      }
+      getFilenameFromResponseHeaders(blob: Blob): string {
+        const contentDisposition = blob.type === 'application/json' ?
+          blob['headers'].get('Content-Disposition') : null;
+        if (contentDisposition) {
+          const filenameMatch = contentDisposition.match(/filename="?(.+)"?/);
+          if (filenameMatch && filenameMatch.length > 1) {
+            return filenameMatch[1];
+          }
+        }
+        return 'data.xlsx';
+      }
+
+    
+
 
     ngOnDestroy(): void {
         this.querySub.unsubscribe();

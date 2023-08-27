@@ -10,9 +10,9 @@
 }
 body {
     width: 100%;
-    background-color: rgb(236, 236, 236);
+    background-color: #fff;    
 }
-
+/* rgb(236, 236, 236) */
 /* card */
 .product-container{
   position: relative;
@@ -21,12 +21,14 @@ body {
   max-width: 12em;
   background-color: #fff;
   padding: 1em;
-  box-shadow: 0 5px 5px #e1e1e1;
+  box-shadow: 5px 5px 5px 2px #e1e1e1;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 3em;
   }
 .product-card img {
   max-width: 100%;
+  height: 200px; /* Thay đổi kích thước theo ý muốn */
+  object-fit: cover;
 }
 .product-card h4 {
   font-size: 1.3em;

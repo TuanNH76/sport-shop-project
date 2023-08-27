@@ -36,12 +36,14 @@ public class ProductController {
 
         Product Product = productService.findOne(productId);
 
-//        // Product is not available
-//        if (Product.getProductStatus().equals(ProductStatusEnum.DOWN.getCode())) {
-//            Product = null;
-//        }
-
         return Product;
+    }
+
+    @GetMapping("product/best-seller")
+    public Page<Product> findByTopSale(@RequestParam(value = "page", defaultValue = "1") Integer page,
+                                       @RequestParam(value = "size", defaultValue = "6") Integer size){
+        PageRequest request = PageRequest.of(page-1,size);
+        return productService.findByTopSale(request);
     }
 
     @PostMapping("/seller/product/new")
@@ -88,5 +90,7 @@ public class ProductController {
         return productService.findAllByName(name,request);
 
     }
+
+
 
 }
