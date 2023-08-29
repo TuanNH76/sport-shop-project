@@ -24,25 +24,37 @@ A Online Sport Shop Web Application.
 - AngularJs
 ## Demo
 - Homepage
+Show Best Seller Products on Top of page
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/0d6e703f-19c8-464b-9388-d5b34cb36f6d)
+
+Show list of Products
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/94f1568f-74fc-444e-81b8-b5ab84198780)
 - Sign up, Sign in
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/9bd6d41c-cf7b-4581-838b-c21420c2d0aa)
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/735356ac-8e3c-449d-9e55-0a266511166d)
 
 
 ### Customer
 * Product Detail
+
+Customer can see product detail when they press "+" button
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/5e6d6da5-7528-4e5e-a19d-1ebcbbd94acd)
 
 * Add to Cart
+
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/b8d8490c-e540-4101-aedc-71c99b36dedf)
 
 * Checkout to Order
+  When user clicks checkout button, order will be generated 
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/ee94667a-8449-4cc2-bb9a-155eafd6929e)
 
 ### Admin
 * Products Management
+
+Admin can
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/9f0fca8b-fe00-4f53-8493-00112145a9ea)
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/bcb129c5-0475-4256-938f-37e149a0199b)
 
