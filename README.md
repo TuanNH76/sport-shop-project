@@ -5,7 +5,7 @@ A Online Sport Shop Web Application.
 - REST API
 - Show Product Catalogue (By Category, Best Seller ... )
 - View Cart and Checkout to Order
-- Product, User, Order Management
+- Product, User, Order Management for Admin
 - Pagination
 - Excel Export
 - JWT Authentication
@@ -72,7 +72,7 @@ and add new products to the store.
 
 * Orders Management
 
-Admin can view order list : 
+Admin can view order list and finish or cancel order : 
 
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/16a254a5-12ef-4e61-aec3-4e451cae4a40)
 
