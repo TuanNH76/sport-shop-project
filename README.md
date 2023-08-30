@@ -6,7 +6,6 @@ A Online Sport Shop Web Application.
 - JWT Authentication
 - Cart & Order management
 - Checkout to Order
-- Catalogue
 - Pagination
 - Excel Export
 - 
@@ -24,10 +23,13 @@ A Online Sport Shop Web Application.
 - AngularJs
 ## Demo
 - Homepage
+
 Show Best Seller Products on Top of page
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/0d6e703f-19c8-464b-9388-d5b34cb36f6d)
 
 Show list of Products
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/94f1568f-74fc-444e-81b8-b5ab84198780)
 - Sign up, Sign in
 
@@ -39,35 +41,56 @@ Show list of Products
 ### Customer
 * Product Detail
 
-Customer can see product detail when they press "+" button
+Customer can see product detail after they press "+" button in product list
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/5e6d6da5-7528-4e5e-a19d-1ebcbbd94acd)
 
 * Add to Cart
 
+Customer can add product to cart with quantity and they can see their cart
 
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/b8d8490c-e540-4101-aedc-71c99b36dedf)
 
 * Checkout to Order
+  
   When user clicks checkout button, order will be generated 
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/ee94667a-8449-4cc2-bb9a-155eafd6929e)
 
 ### Admin
 * Products Management
 
-Admin can
+Admins can view the store's product list, edit product information, delete products
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/9f0fca8b-fe00-4f53-8493-00112145a9ea)
+
+and add new products to the store.
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/bcb129c5-0475-4256-938f-37e149a0199b)
 
 * Orders Management
+
+Admin can view order list : 
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/16a254a5-12ef-4e61-aec3-4e451cae4a40)
+
+Admin can see order detail
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/21aa5833-8dee-4415-9c9d-3e14b8e73f50)
+
+And they can export Excel File of Order List
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/f0e2b8e0-01ff-4832-8077-664395b657b5)
 
 * User Management
+
+Admin can view User list and delete user
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/04736b89-2b9d-4017-bfd0-461c9a3a1dcc)
 
 * Get Revenue
+
+Admin can calculate monthly revenue
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/6eb62b95-cc48-445f-8b69-ecbc851c568c)
+
+And view revenue list
+
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/0c8561aa-62c6-49be-ae48-441efb1ec1d2)
 
 
