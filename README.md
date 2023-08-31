@@ -22,6 +22,9 @@ A Online Sport Shop Web Application.
 - TypeScript
 - AngularJs
 - BootStrap
+### Note
+- Full Process of Backend : https://github.com/juny76/sport_shop
+- Full Process of Frontend : https://github.com/Puda14/Angular-project
 ## Demo
 - Homepage
 
