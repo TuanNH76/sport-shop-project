@@ -6,8 +6,8 @@ A Online Sport Shop Web Application.
 - Show Product Catalogue (By Category, Best Seller ... )
 - View Cart and Checkout to Order
 - Product, User, Order Management for Admin
-- Pagination
 - Review (post Review, view Reviews)
+- Pagination
 - Excel Export
 - JWT Authentication
 ## Technology Stack
