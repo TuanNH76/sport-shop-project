@@ -2,7 +2,6 @@
 ## Online Sport Shop
 A Online Sport Shop Web Application.
 ## Feature
-- REST API
 - Show Product Catalogue (By Category, Best Seller ... )
 - View Cart and Checkout to Order
 - Product, User, Order Management for Admin
@@ -10,6 +9,7 @@ A Online Sport Shop Web Application.
 - Pagination
 - Excel Export
 - JWT Authentication
+- REST API
 ## Technology Stack
 ### Backend
 - Java 8
