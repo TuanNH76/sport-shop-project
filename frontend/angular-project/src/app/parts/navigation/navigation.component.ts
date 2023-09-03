@@ -31,10 +31,14 @@ export class NavigationComponent implements OnInit, OnDestroy {
         this.name$ = this.userService.name$.subscribe(aName => this.name = aName);
         this.currentUserSubscription = this.userService.currentUser.subscribe(user => {
             this.currentUser = user;
-            if (!user || user.role == Role.Customer) {
+            if (!user ) {
                 this.root = '/';
                 this.banner = true;
-            } else {
+            }else if(user.role == Role.Customer){
+                this.root = '/';
+                this.banner = false;
+            } 
+            else {
                 this.root = '/seller';
                 this.banner = false;
             }

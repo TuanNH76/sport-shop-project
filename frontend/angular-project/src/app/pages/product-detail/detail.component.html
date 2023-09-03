@@ -43,3 +43,16 @@
     </div>
   </div>
 </div>
+<div>
+  <h2 align = "center" >Review</h2>
+</div>
+<div *ngFor="let review of page?.content">
+  <!-- Hiển thị thông tin của mỗi đánh giá ở đây -->
+  <div class="author-name">
+    <p>{{ review.userEmail }}</p></div>
+  <p class="date">{{review.createTime}}</p>
+  <p>Rating: {{ review.rating }}/5</p>
+  <p>Comment: {{ review.comment }}</p>
+  <hr>
+</div>
+<app-pagination [currentPage]="page"></app-pagination>

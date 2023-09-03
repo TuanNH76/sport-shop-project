@@ -5,3 +5,67 @@ h5 {
     display: inline-block;
     margin-bottom: 0; /* Loại bỏ khoảng cách dưới cùng của phần tử */
   }
+
+.review-button{
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Loại bỏ viền */
+    padding: 8px 10px; /* Khoảng cách nội dung và viền */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ nổi */
+}
+/* Thiết lập kiểu chung cho khung review */
+.review-modal {
+    background-color: #fff; /* Màu nền */
+    padding: 20px; /* Khoảng cách nội dung và khung */
+    border: 1px solid #ccc; /* Viền khung */
+    border-radius: 5px; /* Bo tròn góc khung */
+    margin: 10px; /* Khoảng cách giữa các khung */
+  }
+  
+  /* Thiết lập kiểu cho các input và textarea */
+  .review-modal input[type="number"],
+  .review-modal textarea {
+    width: 100%; /* Độ rộng chiếm toàn bộ */
+    padding: 10px; /* Khoảng cách nội dung và viền */
+    margin-bottom: 10px; /* Khoảng cách giữa các input và textarea */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 5px; /* Bo tròn góc */
+  }
+  
+  /* Thiết lập kiểu cho nút Send */
+  .button1 {
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Loại bỏ viền */
+    padding: 8px 10px; /* Khoảng cách nội dung và viền */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ nổi */
+    margin-right: 10px; /* Khoảng cách với nút Exit */
+  }
+  
+  /* Thiết lập kiểu cho nút Exit */
+  .button2 {
+    background-color: transparent; /* Nền trong suốt */
+    color: #ff0000; /* Màu chữ xanh dương */
+    border: 1px solid #ff2200; /* Viền xanh dương */
+    padding: 8px 10px; /* Khoảng cách nội dung và viền */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ nổi */
+  }
+  
+  /* Thiết lập kiểu cho thông báo thành công và thông báo lỗi */
+  .review-modal .alert {
+    margin-top: 10px; /* Khoảng cách từ các thông báo đến phần khung trên */
+    padding: 10px; /* Khoảng cách nội dung và viền */
+    border-radius: 5px; /* Bo tròn góc */
+  }
+  .review-modal .alert.alert-success {
+    background-color: #28a745; /* Màu nền xanh lá cây cho thông báo thành công */
+    color: #fff; /* Màu chữ trắng */
+  }
+  .review-modal .alert.alert-danger {
+    background-color: #dc3545; /* Màu nền đỏ cho thông báo lỗi */
+    color: #fff; /* Màu chữ trắng */
+  }
+  

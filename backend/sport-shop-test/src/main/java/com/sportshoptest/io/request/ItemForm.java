@@ -1,4 +1,4 @@
-package com.sportshoptest.form;
+package com.sportshoptest.io.request;
 
 import lombok.Data;
 

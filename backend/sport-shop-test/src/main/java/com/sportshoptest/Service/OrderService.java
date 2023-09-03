@@ -26,4 +26,5 @@ public interface OrderService {
     OrderMain cancel(Integer orderId);
 
     Double getTotalAmount(Integer year, Integer month);
+
 }

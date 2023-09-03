@@ -1,0 +1,12 @@
+h1{
+    margin-top: 50px;
+}
+.author-name {
+    font-weight: bold; /* Để in đậm tên người dùng */
+  }
+  
+  .date {
+    font-style: italic; /* Để làm nghiêng ngày tháng năm */
+    font-size: 0.9em; /* Điều chỉnh kích thước chữ nếu cần */
+  }
+  

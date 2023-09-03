@@ -8,7 +8,7 @@ import com.sportshoptest.Service.CartService;
 import com.sportshoptest.Service.ProductInOrderService;
 import com.sportshoptest.Service.ProductService;
 import com.sportshoptest.Service.UserService;
-import com.sportshoptest.form.ItemForm;
+import com.sportshoptest.io.request.ItemForm;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
