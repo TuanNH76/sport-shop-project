@@ -50,6 +50,10 @@ Customer can see product detail after they press "+" button in product list
 
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/5e6d6da5-7528-4e5e-a19d-1ebcbbd94acd)
 
+Customer can see reviews about this product
+
+![image](https://github.com/juny76/sport-shop-project/assets/87554832/d28ed3d8-59d3-4bef-ae8d-caa213472899)
+
 * Add to Cart
 
 Customer can add product to cart with quantity and they can see their cart
@@ -61,6 +65,10 @@ Customer can add product to cart with quantity and they can see their cart
   When user clicks checkout button, order will be generated
   
 ![image](https://github.com/juny76/sport-shop-project/assets/87554832/ee94667a-8449-4cc2-bb9a-155eafd6929e)
+
+* Post Review for bought Product
+
+![image](https://github.com/juny76/sport-shop-project/assets/87554832/a253ddfa-4d4d-4437-a544-e14ed0c25a33)
 
 ### Admin
 * Products Management
