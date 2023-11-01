@@ -26,6 +26,16 @@ A Online Sport Shop Web Application.
 ### Note
 - Full Process of Backend : https://github.com/juny76/sport_shop
 - Full Process of Frontend : https://github.com/Puda14/Angular-project
+### API demo with Postman
+- Login API
+
+  ![image](https://github.com/juny76/sport-shop-project/assets/87554832/3204bca1-c3a8-4c31-b76e-6c0d63578d2f)
+
+- Get All Products API
+
+  ![image](https://github.com/juny76/sport-shop-project/assets/87554832/1d213dd3-a0c0-48ce-b18c-b93b2cea0a78)
+
+
 ## Demo
 - Homepage
 
